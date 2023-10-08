@@ -1,0 +1,17 @@
+$main-color:#030027;
+$light-text-color:#cbe5e9;
+$medium-main-color:#176087;
+$strong-accent-color:#C03221;
+$contrast-accent-color:#E6AF2E;
+
+@mixin bg-gradient-main(){
+  background: rgb(3,0,39);
+  background: linear-gradient(167deg, rgba(3,0,39,1) 26%, rgba(23,96,135,1) 92%);
+}
+
+
+
+body{
+  background-color: $main-color;
+  color:$light-text-color;
+}
