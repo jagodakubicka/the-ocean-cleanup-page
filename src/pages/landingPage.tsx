@@ -1,5 +1,10 @@
-export const landingPage = () => {
+import {Link} from 'react-router-dom'
+
+export const LandingPage =() => {
  return(
-  <p>landingPage</p>
+  <>
+   <p>landingPage</p>
+   <Link to="/about-us">Skip Game</Link>
+  </>
  )
 }

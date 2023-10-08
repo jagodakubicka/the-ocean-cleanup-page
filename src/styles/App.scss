@@ -1,3 +1,6 @@
+// imports
+
+// colors
 $main-color:#030027;
 $light-text-color:#cbe5e9;
 $medium-main-color:#176087;
@@ -9,9 +12,42 @@ $contrast-accent-color:#E6AF2E;
   background: linear-gradient(167deg, rgba(3,0,39,1) 26%, rgba(23,96,135,1) 92%);
 }
 
+@mixin bg-gradient-text(){
+  background: rgb(230,175,46);
+  background: linear-gradient(198deg, rgba(230,175,46,1) 40%, rgba(192,50,33,1) 83%);
+}
 
 
+// typography
+@font-face {
+  font-family: 'Montserrat', sans-serif;
+  src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap') format('woff2');
+}
+
+@font-face {
+  font-family: 'Poppins', sans-serif;
+  src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap') format('woff2');
+}
+
+// mixins
+
+@mixin title(){
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2em;
+
+}
+@mixin subtitle(){
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.4em;
+}
+@mixin paragraph(){
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.8em;
+}
+
+// main settings
 body{
   background-color: $main-color;
   color:$light-text-color;
+  font-family: 'Montserrat', sans-serif;
 }
