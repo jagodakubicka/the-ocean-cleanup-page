@@ -45,9 +45,21 @@ $contrast-accent-color:#E6AF2E;
   font-size: 0.8em;
 }
 
+@mixin navLinks(){
+  color: $contrast-accent-color;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2em;
+  font-weight: 600;
+  text-decoration: none;
+}
+
 // main settings
 body{
   background-color: $main-color;
   color:$light-text-color;
   font-family: 'Montserrat', sans-serif;
+}
+
+a{
+  @include navLinks
 }
