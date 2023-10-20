@@ -1,11 +1,7 @@
 import './styles/App.scss'
-import React from "react";
 import { BrowserRouter, Routes, Route  } from "react-router-dom";
-import {LandingPage}  from './pages/landingPage';
-import { MainPage } from './pages/mainPage';
-
-
-
+import {LandingPage}  from './pages/LandingPage'
+import { MainPage } from './pages/MainPage';
 
 function App() {
 
