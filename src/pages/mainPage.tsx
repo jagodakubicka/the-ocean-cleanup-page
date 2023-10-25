@@ -9,7 +9,6 @@ export const MainPage = () => {
    return( 
     <>
     <div>
-     
      <Link to="/"><FontAwesomeIcon icon={faArrowLeft} />Go back to collect some more</Link>
      <Header/>
     </div>

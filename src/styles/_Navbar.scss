@@ -1,0 +1,29 @@
+.navbar{
+display: flex;
+gap:2rem;
+justify-content: space-between;
+align-items: center;
+a{
+ font-weight: 300;
+ color: #fff;
+ padding: 1rem;
+ &:hover{
+outline: 1px solid #fff;
+ }
+}
+&__logo{
+ display: flex;
+ justify-content: start;
+align-items: center;
+&--Logotext{
+ font-weight: 900;
+
+}
+&--cube{
+ width: 20px;
+ height: 20px;
+ background-color: #fff;
+ margin-right: 10px;
+}
+}
+}
