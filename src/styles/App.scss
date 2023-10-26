@@ -1,6 +1,7 @@
 // imports
 @import 'Navbar';
 @import 'Game';
+@import 'Header';
 
 // colors
 $main-color:#0F1B33;
@@ -56,6 +57,10 @@ $contrast-accent-color:#E6AF2E;
 }
 
 // main settings
+*{
+  margin: 0;
+  padding: 0;
+}
 
 html{
   cursor: none;
