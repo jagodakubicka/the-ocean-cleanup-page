@@ -6,14 +6,14 @@ export const Navigation = () => {
    return( 
     <>
     <div className='navbar'>
-     <div className='navbar__logo'>
-      <div className="navbar__logo--cube"></div>
-      <h3 className='navbar__logo--Logotext'>Logo</h3>
-     </div>
+      <Link className='navbar__logo' to="/">
+         <div className="navbar__logo--cube"></div>
+         <h3 className='navbar__logo--Logotext'>Together</h3>
+      </Link>
     <div> 
-     <Link to="/">Game</Link>
-     <Link to="/about-us">Home</Link>
-     <Link to="/">Join us</Link></div>
+     <Link className='navbar_link' to="/">Home</Link>
+     <Link className='navbar_link' to="/quiz">Quiz</Link>
+     <Link className='navbar_link' to="/">Join us</Link></div>
     </div>
     </>
    

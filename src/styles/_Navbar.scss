@@ -1,10 +1,13 @@
 .navbar{
+ position: fixed;
+z-index: 999;
 display: flex;
 gap:2rem;
 justify-content: space-between;
 align-items: center;
-padding: 1rem 0;
-a{
+padding: 1rem;
+
+&_link{
  font-weight: 300;
  color: #fff;
  padding: 1rem;
@@ -16,8 +19,12 @@ outline: 1px solid #fff;
  display: flex;
  justify-content: start;
 align-items: center;
+&:hover{
+ outline: none;
+}
 &--Logotext{
  font-weight: 900;
+ text-transform: uppercase;
 
 }
 &--cube{

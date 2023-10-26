@@ -15,8 +15,8 @@ function App() {
      <MouseCursor/>
     <Navigation/>
       <Routes>
-        <Route path="/" element={<LandingPage/>} />
-        <Route path="/about-us" element={<MainPage/>} />
+        <Route path="/quiz" element={<LandingPage/>} />
+        <Route path="/" element={<MainPage/>} />
       </Routes>
  
     </>
