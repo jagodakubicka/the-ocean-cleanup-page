@@ -2,6 +2,7 @@
 @import 'Navbar';
 @import 'Game';
 @import 'Header';
+@import 'InfoSection';
 
 // colors
 $main-color:#0F1B33;
@@ -91,6 +92,7 @@ a{
   border-radius: 50%;
   position: fixed;
   z-index: 999;
+  pointer-events: none;
   &_follower{
     background-color: transparent;
     border: 1px solid $light-text-color;
@@ -100,4 +102,15 @@ a{
     position: fixed;
     z-index: 999;
   }
+}
+
+.cursorHover{
+  background: transparent;
+  border: 2px solid lawngreen;
+  filter: hue-rotate(90deg);
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 999;
 }
