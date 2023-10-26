@@ -1,5 +1,6 @@
 // imports
 @import 'Navbar';
+@import 'Game';
 
 // colors
 $main-color:#0F1B33;
@@ -47,7 +48,7 @@ $contrast-accent-color:#E6AF2E;
 }
 
 @mixin navLinks(){
-  color: $contrast-accent-color;
+  color: $light-text-color;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.2em;
   font-weight: 600;
@@ -55,6 +56,10 @@ $contrast-accent-color:#E6AF2E;
 }
 
 // main settings
+
+html{
+  cursor: none;
+}
 body{
   background-color: $main-color;
   color:$light-text-color;
@@ -72,4 +77,22 @@ a{
   align-items: center;
   min-height: 100vh;
 
+}
+
+.cursor{
+  background-color: $light-text-color;
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 999;
+  &_follower{
+    background-color: transparent;
+    border: 1px solid $light-text-color;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 999;
+  }
 }

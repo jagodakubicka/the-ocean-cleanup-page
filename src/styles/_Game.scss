@@ -1,0 +1,18 @@
+.game{
+ &_link{ 
+  &--skip{
+  font-size: 2rem;
+  position: absolute;
+   transform: translate(-50%, -50%);
+   left:50%;
+   top:20%;
+   background-color: rgb(15, 79, 79);
+   border-radius: 50%;
+   width: 200px;
+   height: 200px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+ }
+}
