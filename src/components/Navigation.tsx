@@ -1,7 +1,8 @@
 import {Link} from 'react-router-dom'
 
 
-export const Navigation = () => {
+export const Navigation = ({change}:any) => {
+
 
    return( 
     <>
@@ -10,10 +11,11 @@ export const Navigation = () => {
          <div className="navbar__logo--cube"></div>
          <h3 className='navbar__logo--Logotext'>Together</h3>
       </Link>
-    <div> 
-     <Link className='navbar_link' to="/">Home</Link>
-     <Link className='navbar_link' to="/quiz">Quiz</Link>
-     <Link className='navbar_link' to="/">Join us</Link></div>
+      <button onClick={()=> change()} className='navbar__btn'>
+         <div className='navbar__btn--bar'></div>
+         <div className='navbar__btn--bar'></div>
+         <div className='navbar__btn--bar'></div>
+      </button>
     </div>
     </>
    
