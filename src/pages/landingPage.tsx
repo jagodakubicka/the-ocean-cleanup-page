@@ -5,8 +5,10 @@ import Ocean from '../assets/images/ocean.jpg';
 export const LandingPage =() => {
  return(
   <>
-  <div className='game_link'> <Link className='game_link--skip' to="/w">Skip Game</Link></div>
-  <img width="100%" src={Ocean} alt="" />
+   <div className='game_link'> 
+    <Link className='game_link--skip' to="/">Skip Game</Link>
+    </div>
+   <img width="100%" src={Ocean} alt="" />
   </>
  )
 }

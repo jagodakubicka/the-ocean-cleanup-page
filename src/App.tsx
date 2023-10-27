@@ -17,7 +17,7 @@ const handleMenuVisible = () => {
   return (
     <>
      <MouseCursor/>
-    <Navigation change ={handleMenuVisible}/>
+    <Navigation handleMenuVisible ={handleMenuVisible} menuVisible={menuVisible}/>
     <NavigationMenu menuVisible={menuVisible}/>
       <Routes>
         <Route path="/quiz" element={<LandingPage/>} />
