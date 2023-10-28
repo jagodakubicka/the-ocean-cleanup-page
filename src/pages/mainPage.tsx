@@ -1,6 +1,6 @@
 
 import { Header } from '../components/Header'
-import { InfoSection } from '../components/InfoSection'
+import { AboutUsSection } from '../components/AboutUsSection'
 import gsap from 'gsap'
 
 export const MainPage = () => {
@@ -10,7 +10,7 @@ export const MainPage = () => {
     <div>
 
      <Header/>
-     <InfoSection/>
+     <AboutUsSection/>
     </div>
     </>
    
