@@ -4,9 +4,40 @@
   text-align: center;
   font-size: 3rem;
  }
- &__text{
+ &__subtitle{
   text-align: center;
   font-size: 1rem;
+ }
+ &__text{
+  text-align: center;
+  font-size: 1.5rem;
+    margin: 1rem .5rem;
+ }
+ &__container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ }
+ &__section{
+  flex:1;
+  &--middle{
+   display: none;
+    justify-content: center;
+  align-items: center;
+   img{
+   width: 10vw;
+   min-width: 250px;
+   margin: 10px;
+  }
+  }
+  &--img{
+      display: flex;
+      flex-direction: column;
+    justify-content: center;
+  align-items: center;
+  }
  }
 }
 
@@ -15,9 +46,21 @@
   h1{
   font-size: 7rem;
  }
- &__text{
+ &__subtitle{
 
   font-size: 2rem;
+ }
+ &__text{
+  font-size: 4rem;
+  margin: 2rem 1rem;
+ }
+ &__container{
+  flex-direction: row;
+ }
+ &__section{
+  &--middle{
+   display: flex;
+  }
  }
  }
 }
