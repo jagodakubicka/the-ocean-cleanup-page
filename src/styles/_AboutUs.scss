@@ -12,6 +12,11 @@
   text-align: center;
   font-size: 1.5rem;
     margin: 1rem .5rem;
+    span{
+     font-size: 2rem;
+     font-weight: 700;
+     color: #fff;
+    }
  }
  &__container{
   width: 100%;
@@ -53,6 +58,11 @@
  &__text{
   font-size: 4rem;
   margin: 2rem 1rem;
+  span{
+
+   font-size: 5rem;
+
+  }
  }
  &__container{
   flex-direction: row;

@@ -21,7 +21,7 @@ export const AboutUsSection = () => {
      </div>
      <div className='about-us__section about-us__section--last'>
       <p className="about-us__text">There are <span>1209</span> registered volunteers.</p>
-       <p className="about-us__text">We haver collected <span>100304kg</span> of waste. </p>
+       <p className="about-us__text">We have collected <span>100304kg</span> of waste. </p>
      </div>
     </div>
    </section>
