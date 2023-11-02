@@ -16,7 +16,7 @@ const handleMenuVisible = () => {
 }
   return (
     <>
-     <MouseCursor/>
+     {/* <MouseCursor/> */}
     <Navigation handleMenuVisible ={handleMenuVisible} menuVisible={menuVisible}/>
     <NavigationMenu handleMenuVisible ={handleMenuVisible} menuVisible={menuVisible}/>
       <Routes>

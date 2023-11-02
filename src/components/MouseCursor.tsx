@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef } from "react";
+import { useState, useRef,useLayoutEffect } from "react";
 import gsap from "gsap";
 
 export const MouseCursor = () => {
@@ -53,7 +53,7 @@ const moveCursorNormal =(e:MouseEvent):void => {
  });
 }
 
-useEffect(()=> {
+useLayoutEffect(()=> {
 gsap.set(cursorRef,{
   xPercent:100,
   yPercent:100
@@ -67,7 +67,7 @@ window.addEventListener("mousemove", moveCursor);
  return ()=> {
   window.removeEventListener("mousemove", moveCursor)
  }
-},[])
+})
 
 
 

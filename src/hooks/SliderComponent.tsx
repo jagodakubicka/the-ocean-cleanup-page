@@ -24,19 +24,19 @@ export const SliderComponent =({sliderData}:SliderDataProps) => {
  }
 
  return(
-  <div style={{width:'100%'}}>
-   <div style={{width:'100%', height:'100%', overflow:'hidden', display:'flex'}}>
+  <div className="slider" style={{width:'100vw'}}>
+   <div style={{width:'100vw', height:'100%', overflow:'hidden', display:'flex'}}>
     {sliderData.map(({text, author}, index)=> {
     return(
-     <div key={index} aria-hidden={slideIndex !== index} style={{translate:`${-100*slideIndex}%`, width:'100%'}}>
+     <div key={index} className="slider-slide" aria-hidden={slideIndex !== index} style={{translate:`${-100*slideIndex}%`}}>
       <p>{text}</p>
       <p>{author}</p>
      </div>
     )
    })}
    </div>
-   <button onClick={showPrevSlide}>Prev</button>
-   <button onClick={showNextSlide}>Next</button>
+   <button className="slider-btn slider-btn__prev" onClick={showPrevSlide}>Prev</button>
+   <button className="slider-btn slider-btn__next" onClick={showNextSlide}>Next</button>
   </div>
  )
 }

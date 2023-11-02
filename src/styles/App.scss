@@ -3,7 +3,7 @@
 @import 'Game';
 @import 'Header';
 @import 'AboutUs';
-
+@import 'Slider';
 // colors
 $main-color:#0F1B33;
 $light-text-color:#cbe5e9;
@@ -65,7 +65,7 @@ $contrast-accent-color:#E6AF2E;
 }
 
 html{
-  cursor: none;
+ // cursor: none;
 }
 body{
   background-color: $main-color;
